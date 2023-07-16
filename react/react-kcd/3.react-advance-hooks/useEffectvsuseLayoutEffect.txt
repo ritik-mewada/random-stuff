@@ -1,0 +1,12 @@
+Almost everywhere you can make use of useEffect.
+If anything in there in useEffect that makes observable changes to dom then make
+use of useLayoutEffect
+
+(e.g)
+const containerRef = React.useRef();
+
+useLayoutEffect(() => {
+  containerRef.current.scrollTop = containerRef.current.scrollHeight;
+})
+
+In this case, if you use useEffect it may not behave well so make use useLayoutEffect;
