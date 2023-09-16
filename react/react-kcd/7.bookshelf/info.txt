@@ -1,4 +1,0 @@
---- MODAL ---
-  package: @reach/dialog
---- MODAL ---
-
